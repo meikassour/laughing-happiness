@@ -1,20 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="/js/main.js"></script>
-    <link rel="stylesheet" href="/css/style.css">
-    <title>My Webpage</title>
+    <title>E-Sandwich</title>
 </head>
+
 <body>
-    <!-- Your content goes here -->
-    <h1>Hello World!</h1>
-    <h2>This is a new header to show how deployement will auto build</h2>
-    <div id="kitty">
-        <img src="images/kitten.jpg" alt="This is a kitten.">
-        <button id="btn">Click me</button>
-    </div>
+    <h1>Make a sandwich</h1>
+    <form>
+        <label for="name">Sandwich name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <div>
+            <p>choose a bread:</p>
+            <label for="white">white</label>
+            <input type="radio" id="white" name="bread" value="white"><br>
+            <label for="ww">whole wheat</label>
+            <input type="radio" id="ww" name="bread" value="whole wheat"><br>
+            <label for="rye">rye</label>
+            <input type="radio" id="rye" name="bread" value="rye"><br>
+            <label for="gf">gluten free</label>
+            <input type="radio" id="gf" name="bread" value="gluten free"><br>
+        </div>
+
+        <div>
+            <label for="protein"> Choose a protein: </label>
+            <select>
+                <option value="turkey">Turkey</option>
+                <option value="ham">Ham</option>
+                <option value="chicken">Chicken</option>
+                <option value="tofu">Tofu</option>
+                <option value="sausage">Sausage</option>
+                <option value="bacon">Bacon</option>
+                <option value="egg">egg</option>
+            </select>
+        </div>
+
+        <div>
+            <p>Choose your toppings:</p>
+            <label for="lettuce">Lettuce</label>
+            <input type="checkbox" id="lettuce" name="lettuce" value="lettuce"><br>
+            <label for="tomato">Tomato</label>
+            <input type="checkbox" id="tomato" name="tomato" value="tomato"><br>
+            <label for="onion">Onion</label>
+            <input type="checkbox" id="onion" name="onion" value="onion"><br>
+            <label for="pickles">Pickles</label>
+            <input type="checkbox" id="pickles" name="pickles" value="pickles"><br>
+            <label for="cheese">Cheese</label>
+            <input type="checkbox" id="cheese" name="cheese" value="cheese"><br>
+            <label for="mayo">Mayo</label>
+            <input type="checkbox" id="mayo" name="mayo" value="mayo"><br>
+            <label for="mustard">Mustard</label>
+            <input type="checkbox" id="mustard" name="mustard" value="mustard"><br>
+            <label for="ketchup">Ketchup</label>
+            <input type="checkbox" id="ketchup" name="ketchup" value="ketchup"><br>
+        </div>
+        <input type="submit" value="Submit">
+    </form>
 </body>
+
 </html>
